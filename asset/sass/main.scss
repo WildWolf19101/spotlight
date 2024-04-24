@@ -1,0 +1,9 @@
+@import "./abstracts/variable";
+@import "./abstracts/mixin";
+
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./components/formSearch.scss";
+
+@import "./layout/header";

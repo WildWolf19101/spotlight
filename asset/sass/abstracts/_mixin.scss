@@ -1,0 +1,10 @@
+@mixin size ($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin text($font-weight, $font-size, $line-height: 1) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
