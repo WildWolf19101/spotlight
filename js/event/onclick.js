@@ -1,20 +1,46 @@
 // onclick button search
 {
-    const buttonSearch = document.querySelector(".search");
+    const btnSearch = document.querySelector(".search");
+    const modal = document.querySelector("#form-modal");
+    const formContent = document.querySelector(".form-content");
 
-    buttonSearch.addEventListener("click", (e) => {
-        const templateForm = `
-        <div class="form">
-                <div class="form-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sequi ducimus consequatur praesentium
-                        obcaecati. A sit ipsam culpa ipsum, tempora earum amet atque, velit eveniet deleniti dolor unde ab
-                        commodi.
-                    </p>
-                </div>
-            </div>
-        `;
+    btnSearch && btnSearch.addEventListener("click", function () {
+        if (!modal) return;
+        modal.classList.add("is-open");
+    });
 
-        console.log(e.target);
-    })
+    modal && modal.addEventListener("click", function (event) {
+        if (!modal) return;
+        if (formContent && formContent.contains(event.target)) {
+            return;
+        }
+        modal.classList.remove("is-open");
 
+    });
+}
+
+// onclick button theme
+{
+    const btnTheme = document.querySelector(".actions-toggle");
+    const logoImgs = document.querySelectorAll(".logo-image");
+
+    const toggle = document.querySelector(".actions-toggle-circle");
+
+    function toggleTheme() {
+        document.body.classList.toggle("dark-theme");
+
+        // logo image
+        logoImgs.forEach((img) => {
+            if (img.classList.contains("active")) {
+                img.classList.remove("active");
+            } else {
+                img.classList.add("active");
+            }
+        })
+
+        // toggle theme
+        toggle.classList.toggle("active");
+    }
+
+    btnTheme && btnTheme.addEventListener("click", toggleTheme);
 }
