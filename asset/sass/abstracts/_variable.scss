@@ -1,4 +1,9 @@
 :root {
+    --border-radius-tags: 4px;
+    --border-radius-buttons: 5px;
+    --border-radius-containers: 8px;
+
+    // color
     --color-gray: #f1f1f2;
 
 
@@ -8,9 +13,17 @@
 
     --color-background-main: #fff;
     --color-text-main: #1d1d1f;
+    --color-text-tags: #616162;
+    --color-text-meta: #a5a5a5;
+
+    --color-card-title-hover: #616162;
 
     --color-background-elements-main: #f1f1f2;
+    --color-background-elements-main-hover: #ededed;
+    --background-custom-color: #E7F2FF;
+    --color-link: #8e8e8f;
 
+    // fonts
     --primary-fonts: "Plus Jakarta Sans", sans-serif;
     --secondary-fonts: "DM Sans", sans-serif;
 }

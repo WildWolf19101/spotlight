@@ -138,7 +138,7 @@
 
     &-login {
         padding: 12px 22px;
-        border-radius: 5px;
+        border-radius: var(--border-radius-buttons);
         background-color: var(--color-button);
         color: var(--color-dark-mode);
         @include text(700, 14px, 1.2);

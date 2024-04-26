@@ -4,8 +4,11 @@
 @import "./base/reset";
 @import "./base/typography";
 
-@import "./components/formSearch.scss";
+@import "./components/formSearch";
+@import "./components/item";
 
 @import "./layout/header";
+
+@import "./pages/homeMain";
 
 @import "./themes/theme";
