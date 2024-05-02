@@ -4,7 +4,17 @@
     justify-content: space-between;
     padding: 0 40px;
     @include size(100%, 80px);
-    background-color: var(--color-white);
+    background-color: var(--color-background-main);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid var(--color-borders);
+    transition: top .3s ease-out;
+}
+
+.is-hidden {
+    top: -120px;
+    transition: top .3s ease-in;
 }
 
 .button {
@@ -81,17 +91,6 @@
             white-space: nowrap;
         }
     }
-}
-
-.logo {
-    &-image {
-        height: 36px;
-        display: none;
-    }
-}
-
-.active {
-    display: block;
 }
 
 .actions {
