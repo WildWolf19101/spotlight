@@ -1,4 +1,3 @@
-// DOM
 const card = document.querySelector(".card");
 const arrCard = document.querySelectorAll(".card");
 const cards = document.querySelector(".cards");
